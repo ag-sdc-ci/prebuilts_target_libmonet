@@ -1,0 +1,24 @@
+package {
+    default_applicable_licenses: ["external_libmonet_license"],
+}
+
+license {
+    name: "external_libmonet_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+java_import {
+    name: "libmonet",
+    jars: ["share/libmonet/libmonet.jar"],
+    host_supported: true,
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
