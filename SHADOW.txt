@@ -1,4 +1,7 @@
 shadow prebuilt repo: libmonet (target)
   upstream: external/libmonet
   api-level: 34 (branch 34-20261024)
-  date: 2026-10-24
+  date: 2026-10-25
+  recipe: ag-ci/external_libmonet @ 2fb42ea (APEXBUILD source pinned platform/external/libmonet#tag=android-14.0.0_r67 = ad43748fbc20ff059869daef20b55bf8d637334e, byte-exact with los-21 checkout)
+  jar: share/libmonet/libmonet.jar = java_library "libmonet" built by bp2ninja javalib (javac 17, API 34, ag-build) from android-14.0.0_r67; java package com.google.ux.material.libmonet (39 .java sources, 47 classes); sha256 55ecf26830a141cda9993d5be56b8cfba917fb3aa590014126a1eda89d1714ee
+  static-deps: compile-classpath only (androidx.annotation annotation-jvm 1.8.0-alpha01, androidx.core core-1.13.1 classes, error_prone_annotations 2.26.1) - NOT bundled into the jar; dependers declare their own static_libs
